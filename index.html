@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InterviewPrep</title>
+</head>
+<body>
+    <h3>3.What is difference between Class components and Functional components?</h3>
+    <table border="1px",width="100%">
+        <tr>
+          <th>Class Components</th>
+          <th>Functional Components</th> 
+        </tr>
+        <tr>
+            <td>Class components can be used when you are doing data operations and server calls.</td>
+            <td>Functional Components can be used mostly when you want to create dumb or stateless components</td>
+        </tr>
+        <tr>
+            <td>Constructor are used as it needs to store state.</td>
+            <td>Constructors are not used.</td>
+        </tr>
+        <tr>
+            <td>It must have the render() method returning JSX (which is syntactically similar to HTML)</td>
+        <td>There is no render method used in functional components</td>
+        </tr>
+        <tr>
+            <td>It requires different syntax inside a class component to implement hooks.</td>
+            <td>Hooks can be easily used in functional components to make them Stateful.</td>
+        </tr>
+        <tr>
+            <td>A class component requires you to extend from React. Component and create a render function which returns a React element.</td>
+            <td>A functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX).</td>
+        </tr>
+    </table>
+    <h3>1.What is Virtual DOM</h3>
+   <p>The Virtual DOM (VDOM) is an in-memory representation of Real DOM. 
+        The representation of a UI is kept in memory and synced with the "real" DOM. 
+        It's a step that happens between the render function being called and the displaying of elements on the screen. 
+        This entire process is called reconciliation.</p>
+     <h3>2.What is SPA?</h3>
+    <p>SPA stands for Single-Page-Application. It is a very common way of programming websites these days.
+         The idea is that the website loads all the HTML/JS the first time you visit. 
+         When you then navigate, the browser will only rerender the content without refreshing the website.
+        This is used to make the user experience feel a lot smoother. 
+        You can tell when its a SPA or multi-page application when navigating between menus often because a multi-page application will reload, making the whole UI blink fast depending on the content. 
+        This is due to it refreshing the website. A SPA will instead feel smooth in the transaction as it simply shows other content without refreshing.</p>
+
+        <h3>4.What does mean by state and its use in react?</h3>
+    <p>State of a component is an object that holds some information that may change over the lifetime of the component.
+        State is used for internal communication inside a component.
+        state is mutable. 
+        We should always try to make our state as simple as possible and minimize the number of stateful components.
+        State is similar to props, but it is private and fully controlled by the component ,i.e., it is not accessible to any other component till the owner component decides to pass it.
+    </p>
+
+  <h3>5.What is JSX and why do we use it instead of js?</h3>
+
+    <p>JSX stands for JavaScript XML.
+        JSX allows us to write HTML in React.
+        JSX makes it easier to write and add HTML in React.
+     <p>Its uses:</p>
+       <li>JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement()  and/or appendChild() methods.</li>
+       <li>JSX converts HTML tags into react elements.</li>
+       <li>JSX is easy used to debug.</li>   
+    </span>
+    
+    <h3>6.What is package.json?</h3>
+
+    <p>package.json is used to store the metadata associated with the project as well as to store the list of dependency packages.
+        In order to add dependency packages to your projects, you need to create package.json file. 
+       The file makes it easy for others to manage and install the packages associated with the project.</p>
+</body>
+</html>
